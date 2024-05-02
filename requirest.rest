@@ -1,0 +1,82 @@
+GET http://localhost:5000/profile
+
+###
+GET http://localhost:5000/profile/1
+
+###
+POST  http://localhost:5000/profile
+Content-Type: application/json
+
+{
+    "username" : "hamdunmuzadi",
+    "name" : "Hamdun",
+    "status" : "junior web Develover",
+    "bio" : "Through consistent practice and relentless learning, I have gained a deep understanding of software development concepts, particularly in the realm of frontend."
+}
+
+###
+PATCH http://localhost:5000/profile/5
+Content-Type: application/json
+
+{
+    "username" : "hamdunmuzadi Updated",
+    "name" : "Hamdun Updated",
+    "status" : "junior web Develover Updated",
+    "bio" : "Through consistent practice and relentless learning, I have gained a deep understanding of software development concepts, particularly in the realm of frontend."
+}
+
+###
+DELETE  http://localhost:5000/profile/1
+
+###
+GET http://localhost:5000/project/
+
+###
+POST  http://localhost:5000/project
+Content-Type: application/json
+
+{
+    "title" : "Task Manager & Financial Tracker Web Application 4",
+    "description" : "One platform to manage tasks, schedules, notes, and finances. Enhance your daily efficiency with an integrated application.",
+    "profileId":
+}
+
+###
+PATCH   http://localhost:5000/project/1
+Content-Type: application/json
+
+{
+    "title" : "Task Manager & Financial Tracker Web Application 2",
+    "description" : "One platform to manage tasks, schedules, notes, and finances. Enhance your daily efficiency with an integrated application.",
+}
+
+###
+DELETE  http://localhost:5000/project/24
+
+###
+POST http://localhost:5000/prototypes
+Content-Type: application/json
+
+{
+    "image_prototype": "INI IMAGE 3",
+    "image_prototype_title_url": "INI IMAGE",
+    "projectId":2
+}
+
+###
+GET  http://localhost:5000/prototypes/
+
+###
+DELETE  http://localhost:5000/prototypes/3
+
+###
+GET  http://localhost:5000/content/1
+
+###
+POST  http://localhost:5000/content
+{
+    "devTitle": "devTitle",
+    "devtools": "devtools",
+    "projectTitle": "projectTitle",
+    "project": "project"
+}
